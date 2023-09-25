@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "General Sans";
+  
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+   
+.loader
+{
+    height: 100vh;
+    width: 100%;
+    background-color: #918989;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.loader h1{
+    font-size: 4vw;
+    font-weight: 500;
+    
+}
+.loader h2{
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+.moving-circle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    z-index: 9999;
+    border-radius: 50%;
+    background-color: #ffff;
+}
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+
+ .bounding .boundingelem {
+    transform: translateY(100%);
+   
+}
+
+.main{
+    width: 100%;
+    background-color: black;
+   
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+}
+
+.nav{
+   
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: 18px;
+    color:#fff ;
+    font-weight: 600;
+}
+
+.nav h5{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.headings{
+    margin-top: 90px;
+}
+
+.headings h1{
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 10vw; 
+    font-weight: 900;
+    opacity: .6;
+    line-height: 1;
+}
+
+.headings #secondh1{
+    margin-left: 230px;
+}
+
+.blocktext{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    width: fit-content;
+    /* background-color: red; */
+}
+.blocktext h5{
+    text-align: right;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.mini{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 100px;
+    padding-right: 50px;
+}
+
+.mini h5{
+    text-align: right;
+    margin-top: .5vw;
+    font-size: 1vw;
+}
+.home-footer{
+    position: absolute;
+    padding: 0 2vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+.home-footer a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.iconset{
+   display: flex;
+   gap: 5px;
+}
+
+.iconset .circle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25px;
+    height: 25px;
+    border-radius:50% ;
+    background-color: #888;
+}
+
+#second {
+    color: #fff;
+    padding-right: 10vw;
+    padding-top: 200px;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    border: 10%;
+}
+
+.elem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    border-top: 1px solid #888;
+}
+.elem h1 {
+    text-transform: uppercase;
+    font-size: 7.6vw;
+    opacity: .7;
+}
+
+.elemlast {
+    border-bottom: 1px solid #888;
+}
+
+.elem img {
+    opacity: 0;
+    pointer-events: none;
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.about{
+   
+    display: flex;
+    align-items: center;
+    gap:50px ;
+    padding: 30vw 10vw;
+    padding-left: 45vw;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+
+}
+
+.abouttext{
+    width: 25rem;
+}
+
+.abouttext h5{
+    text-transform: uppercase;
+    opacity: .4;
+    margin-bottom:10px ;
+}
+
+.abouttext p{
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.about img{
+    width: 300px;
+}
+
+.abouttext a{
+    padding: 12px 22px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.subscribe{
+    color: #fff;
+    padding: 20px 30px;
+    padding-bottom: 7vw;
+    background-color: black;
+    cursor: pointer;
+}
+
+.subscribe h5{
+    text-transform: uppercase;
+    opacity: .6;
+}
+
+.subscribe h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 2;
+}
+.footer{
+   color:#fff;
+    background-color: black;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+ .footerleft{
+    display: flex;
+    gap: 20px;
+}
+.footerright{
+    display:flex;
+    gap: 30px;
+}
+.footerright a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
